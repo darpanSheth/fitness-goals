@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="auhtor" content="Darpan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <noscript>Your browser does not support Javascript. Please switch to another browser.</noscript>  
+    <div id="top" class="top-container">
+        <div class="backdrop"></div>
+        <h2>Fitness<br> &nbsp;&nbsp;&nbsp;Goals</h2>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About&nbsp;us</a></li>
+                <li><a href="Services.html">Services</a></li>
+            </ul><br>
+            <a href="#" title="Already have an account? Sign in here">Sign in</a>&nbsp;&nbsp;<span class="color-lightgreen">|</span>&nbsp;
+            <a href="#" title="Dont have an account yet? Sign up here">Sign up</a>
+        </nav>
+        <div class="nav-icon" onclick="showHideNavBar()">
+            <div class="icon-line"></div>
+            <div id="mid-line" class="icon-line"></div>
+            <div class="icon-line"></div>
+        </div>
+    </div>
+    <div class="container2">
+        <blockquote cite="https://www.snackinginsneakers.com/motivational-workout-quotes/">
+            <q><b><i>Mindset is what seperates, best from the rest</b></i></q>
+        </blockquote>
+        <p>
+            Welcome to the world of fitness. if you are wondering, where to start your fitness journey then, 
+            Congratulations! you are in the right place.
+        </p>
+    </div>
+    <article class="container3">
+        <section>
+            <div>
+                <p>
+                    Your physical appearance is the first and foremost characteristic to make an impactful impression when 
+                    people first meet you. Fitness is an aspect necessary to achieve, not only for gaining your desired outer 
+                    look but also to stay healthy and avoid a long- term diseases like High Cholesterol, diabetes, cancer, etc.
+                    There are three types of fitness to choose from depending on your goals: <span class="bg-lightgrey">Aerobic fitness, Muscle strengthening 
+                    and flexibility.</span> Each of these categories has many exercises which you can perform. But first thing's 
+                    first. You need to know your BMI (Body Mass Index). This factor will help you determine if you are underweight, 
+                    overweight, healthy or obese. <br><br>
+                    Please use the given BMI calculator to set your workout goals.
+                </p>
+            </div>
+            <div>
+                <form id="my-form">
+                    <h1>BMI Calculator</h1><br>
+
+                    <label for="weight">Your weight</label>
+                    <input type="number" id="weight" name="weight" step="0.1"  autofocus required>
+
+                    <select id="weight-unit">
+                        <option selected>kg</option>
+                        <option>lb</option>
+                    </select><br>
+
+                    <label for="height">Your height</label>
+                    <input type="number" id="height" name="height" required>
+
+                    <select id="height-unit">
+                        <option selected>cm</option>
+                        <option>in.</option>
+                    </select>
+                </form><br>
+                <input type="submit" value="calculate" id="BMI-button" form="my-form" onclick="calculateBMI(this.form)"><br><br>
+                <p id="result-BMI">Your BMI is <span class="boldItalic">____</span> which comes under <span class="boldItalic">____</span> category</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Aerobic Fitness</h2>
+                <p>
+                    Aerobic activities condition your heart and lungs. Aerobic means "with oxygen." The purpose of aerobic 
+                    conditioning is to increase the amount of oxygen that is delivered to your muscles, which allows them 
+                    to work longer. Any activity that raises your heart rate and keeps it up for an extended period of time 
+                    will improve your aerobic conditioning.<br><br>
+                    Some of the aerobic exercise includes:
+                </p>
+                <ul>
+                    <li>Swimming</li>
+                    <li>Cycling</li>
+                    <li>Walking</li>
+                    <li>Rowing</li>
+                    <li>Running</li>
+                    <li>Jumping rope</li>
+                    <li>Step aerobics</li>
+                 </ul>
+            </div>
+            <div>
+                <img src="images/Aerobics fitness .jpg">
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Muscle strengthening</h2>
+                <img src="images/Muscle strengthning.jpg">
+            </div>
+            <div>
+                <p>
+                    Stronger muscles can mean either more powerful muscles that can do bigger jobs (such as lifting 
+                    heavier weights) or muscles that will work longer before becoming exhausted (endurance). Weight 
+                    training (resistance training) or simple exercises such as push-ups are two examples of ways to 
+                    focus on muscle strengthening.<br><br>
+                    Some of the muscle strengthning exercise includes:
+                </p>
+                <ul>
+                    <li>Squats</li>
+                    <li>Push-Ups</li>
+                    <li>Pull-Ups</li>
+                    <li>Biceps Curl</li>
+                    <li>Triceps Pulldown</li>
+                    <li>Planks</li>
+                    <li>Deadlifts</li>
+                 </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Flexibility</h2>
+                <p>
+                    Like aerobic fitness and muscle strengthening, flexibility is a result of physical activity. 
+                    Flexibility comes from stretching. Your muscles are repeatedly shortened when they are used, 
+                    especially when exercising. They need to be slowly and regularly stretched to counteract the 
+                    repeated shortening that happens through other activities.<br><br>
+                    Some of the flexibility exercise includes:
+                </p>
+                <ul>
+                    <li>Yoga</li>
+                    <li>Split Squat</li>
+                    <li>Seated hamstring stretch</li>
+                    <li>Shoulder stretch</li>
+                    <li>The forward hang</li>
+                    <li>Butterfly Groin stretch</li>
+                    <li>Lunges</li>
+                 </ul>
+            </div>
+            <div>
+                <img src="images/flexibility.jpg">
+            </div>
+        </section>
+    </article>
+    <div class="bottom-container">
+        <div>
+            <a href="#top">move to top</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

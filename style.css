@@ -1,0 +1,275 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: snow;
+}
+.top-container{
+    background: url(images/Gym.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 1.2em;
+    position: relative;
+}
+
+.backdrop {
+    background-color: #00000060;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+
+.top-container h2{
+    color: lightgreen;
+    font-size: 2.2rem;
+    z-index: 1;
+}
+
+.nav-bar{
+    background-color: white;
+    display: none;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+} 
+
+.nav-bar ul{
+    list-style-type: none;
+    border-left: 3px solid gold;
+    border-bottom: 3px solid green;
+    border-radius: 15px;
+}
+
+.nav-bar ul li{
+    padding: 15px;
+    border-bottom: 1px solid lightsalmon;
+    border-bottom-width: 2px;
+    transition: .3s ease-in-out;
+}
+.nav-bar ul li:last-child{
+    border-bottom: none;
+}
+
+.nav-bar ul li:hover{
+    background-color: burlywood;
+}
+
+.nav-bar ul li a{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-bar a{
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.nav-bar a:hover{
+    color: yellow;
+    background-color: burlywood;
+}
+
+.nav-icon{
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.icon-line{
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: lightgreen;
+}
+
+.container2{
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.container2 p{
+    margin-top: 10px;
+}
+
+.container3{
+    padding: 10px;
+}
+
+.container3 section div{
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.container3 section div h2{
+    margin-bottom: 10px;
+    border-bottom: 2px solid orange;
+    border-bottom-left-radius: 10px;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.container3 section div img{
+    width: 100%;
+    display: block;
+}
+
+.container3 section div ul{
+    margin-left: 1.5rem;
+}
+
+.boldItalic{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: red;
+}
+
+.bg-lightgrey{
+    background-color: lightgrey;
+}
+
+#BMI-button{
+    padding: 7px;
+    font-style: oblique;
+    font-size: 1.1rem;
+    background: linear-gradient(to right, lightgreen, yellow);
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.bottom-container{
+    height: 300px;
+    background-color: lightgreen;
+}
+
+@media all and (min-width: 800px){
+    .top-container{
+        height: 400px;
+    }
+
+    .top-container h2{
+        display: inline;
+    }
+
+    .nav-bar{
+        background-color: transparent;
+        display: block;
+        position: relative;
+        top: 0; 
+        right: 0;
+        display: flex;
+     } 
+    
+    .nav-bar ul{
+        list-style-type: none;
+        border-left: none;
+        border-bottom: 2px solid white;
+        border-radius: none;
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+    }
+    
+    .nav-bar ul li{
+        border-bottom: none;
+        border-bottom-width: 0px;
+        transition: none;
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-bar ul li:last-child{
+        padding-right: 0px;
+    }
+    
+    .nav-bar ul li:hover{
+        background-color: transparent;
+        transform: scale(1.5,1.5);
+    }
+    
+    .nav-bar ul li a{
+        color: lightgreen;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    
+    .nav-bar a{
+        color: lightgreen;
+        font-size: 1.2rem;
+        text-decoration: none;
+        transition: none;
+    }
+
+    .color-lightgreen{
+        color: lightgreen;
+        height: 10px;
+    }
+    
+    .nav-bar a:hover{
+        color: yellow;
+        background-color: transparent;
+    }
+
+    .nav-icon{
+        display: none;
+        cursor: none;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        padding: 0px;
+    }
+    
+    .icon-line{
+        display: none;
+        width: 0px;
+        height: 0px;
+        margin: 0px;
+        background-color: transparent;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container3 section{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    .container3 section div{
+        width: 50%;
+        margin: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+@media all and (min-width: 1600px){
+    .top-container{
+        height: 500px;
+    }
+}
