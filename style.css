@@ -114,7 +114,7 @@ body{
 }
 
 .top-container aside a{
-    color: lightgreen;
+    color: snow;
 }
 
 
@@ -236,6 +236,60 @@ body{
     color: skyblue;
 }
 
+.history-reviewHeading{
+    text-align: center;
+    color: darkgreen;
+}
+
+.aboutUs-container2, .aboutUs-container3{
+    display: flex;
+    flex-direction: column;
+    padding: 1.2em;
+    font-size: 1.2rem;
+}
+
+.aboutUs-container2 *, .aboutUs-container3 *{
+    margin-bottom: 1rem;
+}
+
+.aboutUs-container2 div, .aboutUs-container3 div{
+    background-color: darkgreen;
+    color: lightgreen;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: "Architects Daughter", sans-serif;
+}
+
+.aboutUs-container2 div a{
+    color: lightgreen;
+}
+
+.history-reviewHeading, .aboutUs-container2 div h2, .aboutUs-container3 div h2{
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.moveTo-homePage {
+    width: 100px;
+    background-color: darkgreen;
+    color: lightgreen;
+    text-align: center;
+    padding: 5px;
+    border-top-right-radius: 10px;
+}
+
+.aboutUs-container2 div:hover, .aboutUs-container3 div:hover{
+    animation: zoomIn 3s ease-in forwards;
+}
+
+@keyframes zoomIn{
+    50%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: scale(1.1,1.1);
+    }
+}
+
 @media all and (min-width: 800px){
     .top-container{
         height: 400px;
@@ -330,7 +384,7 @@ body{
     }
     
     .top-container aside a{
-        color: brown;
+        color: blue;
     }
 
     .container3{
@@ -365,6 +419,15 @@ body{
 
     .bottom-container .explore-contact div{
         margin: 20px;
+    }
+    
+    .aboutUs-container2, .aboutUs-container3{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .aboutUs-container2 div, .aboutUs-container3 div{
+        margin: 0 25px;
     }
 }
 
