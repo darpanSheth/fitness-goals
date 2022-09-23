@@ -66,3 +66,13 @@ function calculateBMI(form){
 
     form.reset();
 }
+
+/* The segment below is for displaying the visibility of the options selected on the services page*/
+
+const store = new Map([
+    ["tshirt", 20],
+    ["chaddi", 30],
+    ["banyan", 40]
+])
+
+store.forEach((value, key) => console.log(store.get(key)))

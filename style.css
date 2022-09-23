@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --LIGHTGREEN-COLOR: lightgreen;
+    --DARKGREEN-COLOR: darkgreen;
+    --YELLOW-COLOR: yellow;
+}
+
 body{
     background-color: snow;
 }
@@ -79,7 +85,7 @@ body{
 }
 
 .nav-bar a:hover{
-    color: yellow;
+    color: var(--YELLOW-COLOR);
     background-color: burlywood;
 }
 
@@ -95,7 +101,7 @@ body{
     width: 20px;
     height: 3px;
     margin: 5px auto;
-    background-color: lightgreen;
+    background-color: var(--LIGHTGREEN-COLOR);
 }
 
 .top-container aside{
@@ -103,11 +109,11 @@ body{
     position: absolute;
     left: 20px;
     bottom: 5px;
-    width: 300px;
+    width: 250px;
     padding: 10px;
-    border: 3px solid lightgreen;
+    border: 3px solid var(--LIGHTGREEN-COLOR);
     border-style: dashed;
-    color: lightgreen;
+    color: var(--LIGHTGREEN-COLOR);
     border-radius: 10px;
     font-family: "Special Elite", sans-serif;
     transform: skewX(-10deg);
@@ -128,17 +134,23 @@ body{
     margin-top: 10px;
 }
 
-.container3{
+.container3
+.services-container5{
     padding: 10px;
 }
 
-.container3 section div{
+.container3 section div, 
+.services-container3 div, 
+.services-container4 div,
+.services-container5 section div{
     margin-top: 5px;
-    padding: 5px;
+    padding: 15px;
     font-size: 1.3rem;
 }
 
-.container3 section div h2{
+.container3 section div h2,
+.services-container3 div h2,
+.services-container5 section div h2{
     margin-bottom: 10px;
     border-bottom: 2px solid orange;
     border-bottom-left-radius: 10px;
@@ -148,7 +160,8 @@ body{
     color: gray;
 }
 
-.container3 section div img{
+.container3 section div img,
+.services-container5 section div img{
     width: 100%;
     display: block;
 }
@@ -168,17 +181,17 @@ body{
     background-color: lightgrey;
 }
 
-#BMI-button{
+#BMI-button, #proceed-button, .payment-button{
     padding: 7px;
     font-style: oblique;
     font-size: 1.1rem;
-    background: linear-gradient(to right, lightgreen, yellow);
+    background: linear-gradient(to right, var(--LIGHTGREEN-COLOR), var(--YELLOW-COLOR));
     border: 2px solid red;
     border-radius: 10px;
 }
 
 .bottom-container{
-    background-color: lightgreen;
+    background-color: var(--LIGHTGREEN-COLOR);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -202,7 +215,7 @@ body{
 
 .bottom-container .top-link{
     width: 100px;
-    background-color: darkgreen;
+    background-color: var(--DARKGREEN-COLOR);
     margin: 0 auto;
     text-align: center;
     padding: 5px;
@@ -211,7 +224,7 @@ body{
 }
 
 .bottom-container .top-link a{
-    color: lightgreen;
+    color: var(--LIGHTGREEN-COLOR);
 }
 
 .bottom-container hr{
@@ -238,7 +251,7 @@ body{
 
 .history-reviewHeading{
     text-align: center;
-    color: darkgreen;
+    color: var(--DARKGREEN-COLOR);
 }
 
 .aboutUs-container2, .aboutUs-container3{
@@ -253,15 +266,15 @@ body{
 }
 
 .aboutUs-container2 div, .aboutUs-container3 div{
-    background-color: darkgreen;
-    color: lightgreen;
+    background-color: var(--DARKGREEN-COLOR);
+    color: var(--LIGHTGREEN-COLOR);
     padding: 10px;
     border-radius: 20px;
     font-family: "Architects Daughter", sans-serif;
 }
 
 .aboutUs-container2 div a{
-    color: lightgreen;
+    color: var(--LIGHTGREEN-COLOR);
 }
 
 .history-reviewHeading, .aboutUs-container2 div h2, .aboutUs-container3 div h2{
@@ -270,11 +283,19 @@ body{
 
 .moveTo-homePage {
     width: 100px;
-    background-color: darkgreen;
-    color: lightgreen;
+    background-color: var(--DARKGREEN-COLOR);
+    color: var(--LIGHTGREEN-COLOR);
     text-align: center;
     padding: 5px;
     border-top-right-radius: 10px;
+}
+
+.aboutUs-container2 .moveTo-servicesPageLink{
+    color: var(--YELLOW-COLOR);
+}
+
+.moveTo-homePage:hover, .top-link .moveTo-topLink:hover{
+    color: var(--YELLOW-COLOR);
 }
 
 .aboutUs-container2 div:hover, .aboutUs-container3 div:hover{
@@ -288,6 +309,98 @@ body{
     100%{
         transform: scale(1.1,1.1);
     }
+}
+
+.services-container2{
+    display: flex;
+    justify-content: center;
+    margin: .75rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: "Roboto Slab", sans-serif;
+    color: var(--DARKGREEN-COLOR);
+}
+
+.services-container2 p::after{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    background-color: var(--DARKGREEN-COLOR);
+    color: var(--LIGHTGREEN-COLOR);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.services-container3, .services-container4{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+ 
+.services-container3 div form{
+    margin-bottom: 10px;
+}
+
+.services-container3 div form select option{
+    font-size: 1.4rem;
+}
+
+.bonus-offer *{
+    margin-bottom: 15px;
+}
+
+.bonus-offer{
+    border: 5px dashed blueviolet;
+    animation: changingTextColor 2s ease-in infinite;
+    transform: skewX(-5deg);
+    margin-bottom: 10px;
+}
+
+.services-container4 div form label{
+    font-size: 1.7rem;
+}
+
+@keyframes changingTextColor{
+    33%{
+        color: red;
+    }
+
+    66%{
+        color: lightgreen;
+    }
+
+    100%{
+        color: coral;
+    }
+}
+
+.price{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 1.7rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--DARKGREEN-COLOR);
+}
+
+.amount-footer{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--DARKGREEN-COLOR);
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.total-amount{
+    color: darkblue;
+}
+
+.payment-link{
+    text-align: right;
+    margin: 15px;
 }
 
 @media all and (min-width: 800px){
@@ -337,25 +450,25 @@ body{
     }
     
     .nav-bar ul li a{
-        color: lightgreen;
+        color: var(--LIGHTGREEN-COLOR);
         font-size: 1.2rem;
         text-decoration: none;
     }
     
     .nav-bar a{
-        color: lightgreen;
+        color: var(--LIGHTGREEN-COLOR);
         font-size: 1.2rem;
         text-decoration: none;
         transition: none;
     }
 
-    .color-lightgreen{
-        color: lightgreen;
+    .color-lightGreen{
+        color: var(--LIGHTGREEN-COLOR);
         height: 10px;
     }
     
     .nav-bar a:hover{
-        color: yellow;
+        color: var(--YELLOW-COLOR);
         background-color: transparent;
     }
 
@@ -387,20 +500,23 @@ body{
         color: blue;
     }
 
-    .container3{
+    .container3,
+    .services-container5{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .container3 section{
+    .container3 section,
+    .services-container5 section{
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
-        width: 80%;
+        width: 100%;
     }
     
-    .container3 section div{
+    .container3 section div,
+    .services-container5 section div{
         width: 50%;
         margin: 20px;
     }
@@ -428,6 +544,16 @@ body{
     
     .aboutUs-container2 div, .aboutUs-container3 div{
         margin: 0 25px;
+    }
+
+    .services-container3, .services-container4{
+        flex-direction: row;
+    }
+
+    .services-container3 div, .services-container4 div{
+        width: 50%;
+        padding: 30px;
+        margin: 10px;
     }
 }
 
