@@ -386,16 +386,25 @@ body{
     color: var(--DARKGREEN-COLOR);
 }
 
-.amount-footer{
+#amount-footer{
     text-align: center;
     margin-bottom: 20px;
     color: var(--DARKGREEN-COLOR);
     font-weight: bolder;
     font-style: oblique;
+    display: none;
 }
 
-.total-amount{
+#total-amount{
     color: darkblue;
+}
+
+.bill-service{
+    display: none;
+}
+
+.bill-service-flex{
+    display: block;
 }
 
 .payment-link{
@@ -508,11 +517,14 @@ body{
     }
 
     .container3 section,
-    .services-container5 section{
-        display: flex;
+    .bill-service{
         justify-content: center;
         margin-bottom: 10px;
         width: 100%;
+    }
+
+    .bill-service-flex{
+        display: flex;
     }
     
     .container3 section div,
