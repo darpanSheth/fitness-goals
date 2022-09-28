@@ -516,7 +516,13 @@ body{
         align-items: center;
     }
 
-    .container3 section,
+    .container3 section{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
     .bill-service{
         justify-content: center;
         margin-bottom: 10px;
