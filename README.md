@@ -4,6 +4,6 @@ It also lets user choose the wide variety of services that Fitness Goals offers.
 
 Skills used - HTMl, CSS(responsive) and javascript. This is an ongoing full front-end responsive web project (no framework used).
 
-Phases completed - Home page, About us page, Services page
+Phases completed - Home page, About us page, Services page, Payment page.
 
-Phases remaining - Sign in/Sign up page, Payment page.
+Phases remaining - Sign in/Sign up page.
