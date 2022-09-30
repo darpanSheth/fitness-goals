@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="auhtor" content="Darpan">
+    <meta name="description" content="Fitness goals services">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals | Payment page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fascinate&family=Ms+Madi&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@500&family=Source+Code+Pro&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/818956c4fc.js" crossorigin="anonymous"></script>
+</head>
+<body class="body-payment-page">
+   <div class="payment-container">
+        <a href="Services.html"><button id="update-button" onclick="closeWindow()"><-- Update your order</button></a>
+        <h2>Chooose your payment method</h2>
+        <form>
+          
+                <label for="debit">Debit</label>
+                <input type="radio" id="debit" name="payemntMethod">
+       
+
+                <label for="visa">Visa</label>
+                <input type="radio" id="visa" name="payemntMethod">
+         
+
+                <label for="master">Mastercard</label>
+                <input type="radio" id="master" name="payemntMethod">
+            
+            <div>
+                <label for="fname">Name*</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your full name" pattern="[A-Za-z]*" required>
+            </div>
+
+            <div>
+                <label for="email">Email Id:*</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            </div>
+
+            <div>
+                <label for="card">Enter your card number*</label>
+                <input type="tel" id="card" name="card" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+            </div>
+
+            <div>
+                <label for="cvv">CVV number*</label>
+                <input type="number" id="cvv" name="cvv" pattern="([0-9]|[0-9]|[0-9])" max="999" placeholder="Three digit CVV " required>
+            </div>
+
+        </form>
+  </div> 
+</body>
+</html>

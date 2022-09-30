@@ -181,7 +181,8 @@ body{
     background-color: lightgrey;
 }
 
-#BMI-button, #proceed-button, .payment-button{
+#BMI-button, #proceed-button, .payment-button,
+.body-payment-page, .payment-container #update-button{
     padding: 7px;
     font-style: oblique;
     font-size: 1.1rem;
@@ -412,6 +413,57 @@ body{
     margin: 15px;
 }
 
+.body-payment-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: none;
+    margin: 15px;
+}
+
+.payment-container{
+    width: 100%;
+    border: 2px solid red;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: darkgreen;
+    border-radius: 80% 10% / 25%;
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.payment-container *{
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.payment-container div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-container h2, .payment-container label{
+    background-image: linear-gradient(90deg, yellow, orange, cyan);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.payment-container input:invalid:focus{
+    animation: shake .3s;
+    border: 5px solid red;
+}
+
+@keyframes shake{
+    25% {transform: translateX(5px)}
+    50% {transform: translateX(-5px)}
+    75% {transform: translateX(5px)}
+}
+
 @media all and (min-width: 800px){
     .top-container{
         height: 400px;
@@ -522,7 +574,7 @@ body{
         margin-bottom: 10px;
         width: 100%;
     }
-    
+
     .bill-service{
         justify-content: center;
         margin-bottom: 10px;
