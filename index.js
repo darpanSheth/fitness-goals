@@ -156,6 +156,3 @@ proceedButton.addEventListener("click", (e) => {
     e.target.form.reset();
 
 })
-
-
-
