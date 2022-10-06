@@ -13,7 +13,7 @@
    <div class="payment-container">
         <a href="Services.html"><button id="update-button" onclick="closeWindow()"><-- Update your order</button></a>
         <h2>Chooose your payment method</h2>
-        <form>
+        <form id="payment-page-form">
           
                 <label for="debit">Debit</label>
                 <input type="radio" id="debit" name="payemntMethod">
@@ -47,7 +47,8 @@
             </div>
 
         </form>
-        <a href="thankYou.html"><button id="payment-submit-button">Submit your order</button></a>
-  </div> 
+        <a href="thankYou.html"><button form="payment-page-form" type="submit" id="payment-submit-button">Submit your order</button></a>
+  </div>
+  <script src="payment.js"></script> 
 </body>
 </html>
