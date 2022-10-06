@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="auhtor" content="Darpan">
+    <meta name="description" content="Fitness goals sign-up page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals | Sign-up page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fascinate&family=Ms+Madi&family=Poppins&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@500&family=Source+Code+Pro&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body class="sign-up-body">
+    <div class="sign-up-container">
+        <form action="/" id="sign-up-form">
+            <h2>Sign Up here</h2>
+            <div class="sign-in-link">
+                <a href="signIn.html">Already signed up? Sign in here</a>
+            </div>
+            <div class="input-validation">
+                <label for="username">Choose a Username*</label>
+                <input type="text" name="username" id="username">
+                <div class="error-message-box"></div>
+            </div>
+            <div class="input-validation">
+                <label for="email">Enter a valid Email address*</label>
+                <input type="text" name="email" id="email" placeholder="xyz@gmail.com">
+                <div class="error-message-box"></div>
+            </div>
+            <div class="input-validation">
+                <label for="password">Choose a Password*</label>
+                <input type="password" name="password" id="password" placeholder="Should be 8 to 20 characters" autocomplete="off">
+                <div class="error-message-box"></div>
+            </div>
+            <div class="input-validation">
+                <label for="password2">Confirm Password*</label>
+                <input type="password" name="password2" id="password2" placeholder="Should be same as password" autocomplete="off">
+                <div class="error-message-box"></div>
+            </div>
+            <button id="sign-up-button" type="submit">Sign up</button>
+        </form>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

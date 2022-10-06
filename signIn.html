@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="auhtor" content="Darpan">
+    <meta name="description" content="Fitness goals sign-in page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Goals | Sign-in page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fascinate&family=Ms+Madi&family=Poppins&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@500&family=Source+Code+Pro&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body class="sign-in-body">
+    <div class="sign-in-container">
+        <form action="/" id="sign-in-form">
+            <h2>Sign In here</h2>
+            <div class="sign-up-link">
+                <a href="signUp.html">New to Fitness Goals? Sign up here</a>
+            </div>
+            <div class="input-validation">
+                <label for="username">Username*</label>
+                <input type="text" name="username" id="username" placeholder="enter your username">
+                <div class="error-message-box"></div>
+            </div>
+            <div class="input-validation">
+                <label for="password">Password*</label>
+                <input type="password" name="password" id="password" placeholder="enter your password" autocomplete="off">
+                <div class="error-message-box"></div>
+            </div>
+            <button id="sign-in-button" type="submit">Sign in</button>
+        </form>
+    </div>
+    <script src="signin.js"></script>
+</body>
+</html>
