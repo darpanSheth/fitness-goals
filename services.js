@@ -1,3 +1,29 @@
+function showHideNavBar(){
+    /* This function is to toggle the visibility of the nav bar when 
+    hamburger icon is clicked*/
+
+    var toggle = document.getElementsByClassName("nav-bar");
+    var iconLine = document.getElementsByClassName("icon-line");
+    var midLine = document.getElementById("mid-line");
+
+    if(toggle[0].style.display == "none"){
+        toggle[0].style.display = "block";
+        midLine.style.display = "none";
+        iconLine[0].style.backgroundColor = "black";
+        iconLine[0].style.transform = "skewY(45deg)";
+        iconLine[2].style.backgroundColor = "black";
+        iconLine[2].style.transform = "skewY(-45deg)";
+    }
+    else{
+        toggle[0].style.display = "none";
+        midLine.style.display = "block"
+        iconLine[0].style.backgroundColor = "lightgreen";
+        iconLine[0].style.transform = "skewY("+(0)+"deg)";
+        iconLine[2].style.backgroundColor = "lightgreen";
+        iconLine[2].style.transform = "skewY("+0+"deg)";
+    }
+}
+
 /* The whole segment below is for displaying the visibility of the options selected on the services page*/
 
 const allInOne = document.getElementById("offer-checkbox");                                 //selected the allInOne offer checkbox
